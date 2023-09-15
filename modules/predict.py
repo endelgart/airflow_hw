@@ -8,9 +8,9 @@ import json
 import glob
 from datetime import datetime
 
-path = os.environ.get('$PROJECT_PATH', '.')
+path = os.environ.get('PROJECT_PATH', '.')
 #path = os.path.expanduser('C:/Users/ppmet/Air_project/airflow_hw')
-#path = os.path.expanduser('~/airflow_hw')
+path = os.path.expanduser('~/airflow_hw')
 # Добавим путь к коду проекта в переменную окружения, чтобы он был доступен python-процессу
 os.environ['PROJECT_PATH'] = path
 
